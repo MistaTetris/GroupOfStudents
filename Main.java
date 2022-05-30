@@ -34,9 +34,8 @@ public class Main {
 		
 		System.out.println(tf+"\n");
 
-//		tf = groupA.removeStudentById(114);
-//		
-//		System.out.println(tf+"\n");
+		tf = groupA.removeStudentById(114);
+		System.out.println(tf+"\n");
 		
 		
 		for (int i = 0; i < students.length; i++) {
