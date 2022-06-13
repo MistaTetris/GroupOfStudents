@@ -5,7 +5,7 @@ public class Student extends Human {
 	private String groupName;
 
 	public Student(String firstName, String lastName, Gender gender, int id, String groupName) {
-		super(firstName, lastName, gender);
+		
 		this.id = id;
 		this.groupName = groupName;
 	}
@@ -17,6 +17,7 @@ public class Student extends Human {
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -24,13 +25,15 @@ public class Student extends Human {
 	public String getGroupName() {
 		return groupName;
 	}
+
 	public void setGroupName(String groupName) {
 		this.groupName = groupName;
 	}
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", groupName=" + groupName + "]";
+
+		return "Student [Last Name: " + getLastName() + ";\t Fist Name: " + getFirstName() + "; ID: " + id + "; groupName: " + groupName + "]";
 	}
 
 }
